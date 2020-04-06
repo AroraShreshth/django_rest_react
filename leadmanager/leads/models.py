@@ -6,3 +6,6 @@ class Lead(models.Model):
     email = models.EmailField(max_length=length, unique=True)
     message = models.CharField(max_length=length*500, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    
+    def __str__(self):
+        return f'{self.name}'
