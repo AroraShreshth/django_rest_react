@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import propTypes from 'prop-types';
 import { getLeads, deleteLead } from '../../actions/leads'
 
-export class Leads extends Component {
+class Leads extends Component {
     static propTypes = {
         leads: propTypes.array.isRequired,
         getLeads: propTypes.func.isRequired,
