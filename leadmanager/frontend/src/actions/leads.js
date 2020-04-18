@@ -32,7 +32,7 @@ export const deleteLead = (id) => (dispatch) => {
         .catch((err) => console.log(err));
 };
 
-
+// Add Leads Functional View
 
 export const addLead = (lead) => (dispatch) => {
     axios.defaults.xsrfCookieName = 'csrftoken';
